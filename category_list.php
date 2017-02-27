@@ -28,11 +28,8 @@ $statement->closeCursor();
             <th>Name</th>
             <th>&nbsp;</th>
         </tr>
-        
-        <!-- add code for the rest of the table here -->
-    
-    </table>
-
+	
+	</table>
     <h2>Add Category</h2>
     
     <!-- add code for the form here -->
