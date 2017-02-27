@@ -8,10 +8,8 @@ include('error.php');
 else {
 require_once('database.php');
 
-$query = 'INSERT INTO categories_guitar1
-(categoryName)
-VALUES
-(:name)';
+$query = 'INSERT INTO categories_guitar1 (categoryName)
+VALUES (:name)';
 
 $statement = $db->prepare($query);
 $statement = bindValue(':name', $name);
