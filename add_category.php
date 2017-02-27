@@ -12,7 +12,7 @@ $query = 'INSERT INTO categories_guitar1 (categoryName)
 VALUES (:name)';
 
 $statement = $db->prepare($query);
-$statement = bindValue(':name', $name);
+$statement->bindValue(':name', $name);
 $statement->execute();
 $statement->closeCursor();
 
